@@ -1,6 +1,6 @@
 {
   "name": "is-accessible",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Checks if a file or folder is accessible",
   "main": "index.js",
   "scripts": {

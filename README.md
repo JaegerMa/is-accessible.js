@@ -12,17 +12,14 @@ var isAccessible = require('is-accessible');
 
 //result is always true or false
 
+//If no mode is given, only access is checked, rwx isn't checked
 isAccessible('/pato/to/something', (result) => { });
+isAccessible('/path/to/something', 'wx', (result) => { });
 
 let result = await isAccessible('/path/to/something');
-//If no mode is given, only access is checked, rwx isn't checked
-
 let result = await isAccessible('/path/to/something', 'r'):
 
-let result = await isAccessible('/path/to/something', 'wx', (result) => { });
-
 let result = isAccessible.sync('/path/to/something');
-
 let result = isAccessible.sync('/path/to/something', 'w');
 ```
 
